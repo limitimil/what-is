@@ -2,8 +2,8 @@
   "name": "what-is",
   "version": "0.1.0",
   "description": "An out-of-box toolset that help you explore your react project.",
-  "main": "index.js",
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/limitimil/what-is/issues"
   },
-  "homepage": "https://github.com/limitimil/what-is#readme"
+  "homepage": "https://github.com/limitimil/what-is#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "del": "3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-revert-path": "^2.0.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15"
+  }
 }
