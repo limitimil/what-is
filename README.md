@@ -7,7 +7,7 @@ An out-of-box toolset that help you explore your react project.
 To gain insights into your component's properties and their relationships,
 
 ```js
-import { withPropertyDashboard } from 'what-is/exploration/withPropertyDashboard';
+import withPropertyDashboard from 'what-is/exploration/withPropertyDashboard';
 
 // An example functional component
 function MyComponent() {
@@ -23,7 +23,7 @@ export default withPropertyDashboard(MyComponent, {toConsole: true, toDashboard:
 To gain insights into your component's properties and their relationships,
 
 ```js
-import { useHookDashboard } from 'what-is/exploration/withPropertyDashboard';
+import useHookDashboard from 'what-is/exploration/useHookDashboard';
 import useCustomHook from 'path/to/custom/hook';
 
 const MyComponent = () => {
