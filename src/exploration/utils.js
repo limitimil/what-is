@@ -4,6 +4,14 @@ export function stringifyWithCircular(obj, depth = 3) {
         obj,
         function (key, value) {
             if (depth > 0) {
+                if (typeof value === 'function') {
+                    try {
+                        value = value.toString();
+                    } catch (e) {
+                        console.log('error', e);
+                    }
+                }
+
                 if (typeof value === 'object' && value !== null) {
                     if (seen.has(value)) {
                         return '[Circular Reference]';
